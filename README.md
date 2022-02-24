@@ -14,3 +14,6 @@ Moreover, for Chinese natural language processing, we add **full turn to half an
 
 Please let me know, if you encounter any problems.
 
+## Updata
+
+修改`BasicTokenizer.java`中，`isPunctuation()`方法，因为这里有判断字符类型，在Python中使用的是`unicodedata.category(char)`，这里使用的是直接判断，但是这里写的不够全面，我在这里补充了一点，让结果与Python版本的tokenizer更加接近一些。
